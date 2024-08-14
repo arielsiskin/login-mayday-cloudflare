@@ -2,7 +2,7 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/api/proxy/kfc/:path*',
+        source: '/api/proxy/delivery/:path*',
         destination: 'https://delivery.neotelecd.com/:path*',
       },
       {
