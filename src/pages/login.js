@@ -35,13 +35,14 @@ const Login = () => {
   
     const [username, userDomain] = usuario.split('@');
     let proxyEndpoint = '/api/proxy/kfc/neoapi/webservice.asmx/ExecuteTask03';
-        
+    let idtask = '1';     
   
     // Validar el dominio del correo
     if (userDomain === 'delivery.com') {
       proxyEndpoint = '/api/proxy/kfc/neoapi/webservice.asmx/ExecuteTask03';
     } else if (userDomain === 'ecd02.com') {
       proxyEndpoint = '/api/proxy/ecd02/neoapi/webservice.asmx/ExecuteTask03';
+      idtask = '76';
     } else {
       MySwal.fire({
         title: <strong>Atención</strong>,
@@ -55,7 +56,7 @@ const Login = () => {
   
     try {
       const response = await axios.post(proxyEndpoint, {
-        idTask: 1,
+        idTask: idtask,
         param1: username, 
         param2: clave,
         param3: ipAddress,
