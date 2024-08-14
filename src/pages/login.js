@@ -40,6 +40,7 @@ const Login = () => {
     // Validar el dominio del correo
     if (userDomain === 'delivery.com') {
       proxyEndpoint = '/api/proxy/kfc/neoapi/webservice.asmx/ExecuteTask03';
+       idtask = '1';
     } else if (userDomain === 'ecd02.com') {
       proxyEndpoint = '/api/proxy/ecd02/neoapi/webservice.asmx/ExecuteTask03';
       idtask = '76';
