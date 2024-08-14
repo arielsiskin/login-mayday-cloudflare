@@ -2,9 +2,13 @@
 const nextConfig = {async rewrites() {
   return [
     {
-      source: '/api/:path*',
-      destination: 'http://delivery.neotelecd.com/neoapi/webservice.asmx/:path*' // Proxy to Backend
-    }
+      source: '/api/proxy/kfc/:path*',
+      destination: 'https://delivery.neotelecd.com/:path*', // Proxy to Backend
+     },
+      {
+        source: '/api/proxy/ecd02/:path*',
+        destination: 'https://ecd02.neotelecd.com/:path*',
+      }
   ];
 },};
 export default nextConfig;
