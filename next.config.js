@@ -6,7 +6,7 @@ module.exports = {
         destination: 'https://delivery.neotelecd.com/:path*',
       },
       {
-        source: '/api/proxy/mcdonald/:path*',
+        source: '/api/proxy/ecd02/:path*',
         destination: 'https://ecd02.neotelecd.com/:path*',
       },
     ]
