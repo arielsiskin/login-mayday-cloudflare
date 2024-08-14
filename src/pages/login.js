@@ -35,7 +35,7 @@ const Login = () => {
   
     const [username, userDomain] = usuario.split('@');
     let proxyEndpoint = '/api/proxy/kfc/neoapi/webservice.asmx/ExecuteTask03';
-    let idtask = '76';     
+    let idtask = '';     
   
     // Validar el dominio del correo
     if (userDomain === 'delivery.com') {
