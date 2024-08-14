@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: '/api/proxy/delivery/:path*',
-        destination: 'https://delivery.neotelecd.com/:path*',
+        destination: 'http://delivery.neotelecd.com/:path*',
       },
       {
         source: '/api/proxy/ecd02/:path*',
