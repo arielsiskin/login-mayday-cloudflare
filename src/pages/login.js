@@ -34,12 +34,12 @@ const Login = () => {
     setIsLoading(true);
   
     const [username, userDomain] = usuario.split('@');
-    let proxyEndpoint = '/api/proxy/kfc/neoapi/webservice.asmx/ExecuteTask03';
+    let proxyEndpoint = '/api/proxy/delivery/neoapi/webservice.asmx/ExecuteTask03';
     let idtask = '';     
   
     // Validar el dominio del correo
     if (userDomain === 'delivery.com') {
-      proxyEndpoint = '/api/proxy/kfc/neoapi/webservice.asmx/ExecuteTask03';
+      proxyEndpoint = '/api/proxy/delivery/neoapi/webservice.asmx/ExecuteTask03';
        idtask = '1';
     } else if (userDomain === 'ecd02.com') {
       proxyEndpoint = '/api/proxy/ecd02/neoapi/webservice.asmx/ExecuteTask03';
