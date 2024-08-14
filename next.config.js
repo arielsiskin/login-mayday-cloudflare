@@ -3,11 +3,11 @@ module.exports = {
     return [
       {
         source: '/api/proxy/kfc/:path*',
-        destination: 'http://delivery.neotelecd.com/:path*',
+        destination: 'https://delivery.neotelecd.com/:path*',
       },
       {
         source: '/api/proxy/mcdonald/:path*',
-        destination: 'http://webmcdonald.neotelecd.com/:path*',
+        destination: 'https://ecd02.neotelecd.com/:path*',
       },
     ]
   },
