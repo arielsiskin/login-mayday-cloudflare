@@ -35,12 +35,13 @@ const Login = () => {
   
     const [username, userDomain] = usuario.split('@');
     let proxyEndpoint = '/api/proxy/kfc/neoapi/webservice.asmx/ExecuteTask03';
+        
   
     // Validar el dominio del correo
-    if (userDomain === 'kfc.com') {
+    if (userDomain === 'delivery.com') {
       proxyEndpoint = '/api/proxy/kfc/neoapi/webservice.asmx/ExecuteTask03';
-    } else if (userDomain === 'mcdonald.com') {
-      proxyEndpoint = '/api/proxy/mcdonald/neoapi/webservice.asmx/ExecuteTask03';
+    } else if (userDomain === 'ecd02.com') {
+      proxyEndpoint = '/api/proxy/ecd02/neoapi/webservice.asmx/ExecuteTask03';
     } else {
       MySwal.fire({
         title: <strong>Atención</strong>,
