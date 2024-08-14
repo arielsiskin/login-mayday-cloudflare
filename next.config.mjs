@@ -2,7 +2,7 @@
 const nextConfig = {async rewrites() {
   return [
     {
-      source: '/api/proxy/kfc/:path*',
+      source: '/api/proxy/delivery/:path*',
       destination: 'http://delivery.neotelecd.com/:path*', // Proxy to Backend
      },
       {
