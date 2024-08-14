@@ -7,7 +7,7 @@ const nextConfig = {async rewrites() {
      },
       {
         source: '/api/proxy/ecd02/:path*',
-        destination: 'https://ecd02.neotelecd.com/:path*',
+        destination: 'http://ecd02.neotelecd.com/:path*',
       }
   ];
 },};
