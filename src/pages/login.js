@@ -114,9 +114,10 @@ const Login = () => {
 
   const handleClaveChange = (e) => {
     const value = e.target.value;
-    if (/^\d*$/.test(value)) {
-      setClave(value);
-    }
+    setClave(value);
+   // if (/^\d*$/.test(value)) {
+     // setClave(value);
+    //}
   };
 
   return (
