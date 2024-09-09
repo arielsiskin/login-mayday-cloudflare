@@ -146,7 +146,7 @@ const Login = () => {
                   className={styles.input}
                   type="password"
                   value={clave}
-                  onChange={handleClaveChange}
+                  //onChange={handleClaveChange}
                   placeholder="Clave"
                   required
                 />
