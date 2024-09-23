@@ -34,7 +34,7 @@ const Login = () => {
     setIsLoading(true);
   
     const [username, userDomain] = usuario.split('@');
-    let proxyEndpoint = '/api/proxy/delivery/neoapi/webservice.asmx/ExecuteTask03';
+    let proxyEndpoint = '-';
     let idtask = '';     
   
     // Validar el dominio del correo
