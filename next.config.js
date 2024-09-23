@@ -6,6 +6,10 @@ module.exports = {
         destination: 'http://delivery.neotelecd.com/:path*',
       },
       {
+        source: '/api/proxy/ceneval/:path*',
+        destination: 'http://ceneval.neotelecd.com/:path*',
+      },
+      {
         source: '/api/proxy/ecd02/:path*',
         destination: 'http://ecd02.neotelecd.com/:path*',
       },
