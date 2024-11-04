@@ -43,7 +43,7 @@ const Login = () => {
        idtask = '1';
     } else if (userDomain === 'ceneval.com') {
       proxyEndpoint = '/api/proxy/ceneval/neoapi/webservice.asmx/ExecuteTask03';
-      idtask = '1';
+      idtask = '2';
     } else if (userDomain === 'ecd02.com') {
       proxyEndpoint = '/api/proxy/ecd02/neoapi/webservice.asmx/ExecuteTask03';
       idtask = '76';
