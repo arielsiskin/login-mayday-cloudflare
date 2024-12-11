@@ -41,11 +41,11 @@ const Login = () => {
     if (userDomain === 'delivery.com') {
       proxyEndpoint = '/api/proxy/delivery/neoapi/webservice.asmx/ExecuteTask03';
        idtask = '1';
-    } else if (userDomain === 'ceneval.com') {
+    } else if (userDomain === 'ecd04.com') {
       proxyEndpoint = '/api/proxy/ceneval/neoapi/webservice.asmx/ExecuteTask03';
       idtask = '2';
     } else if (userDomain === 'ecd02.com') {
-      proxyEndpoint = '/api/proxy/ecd02/neoapi/webservice.asmx/ExecuteTask03';
+      proxyEndpoint = '/api/proxy/ecd04/neoapi/webservice.asmx/ExecuteTask03';
       idtask = '76';
     } else if (userDomain === 'broxel.com') {
       proxyEndpoint = '/api/proxy/broxel/neoapi/webservice.asmx/ExecuteTask03';
