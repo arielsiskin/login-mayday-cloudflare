@@ -17,6 +17,10 @@ module.exports = {
         source: '/api/proxy/broxel/:path*',
         destination: 'https://broxel.neotelecd.com/:path*',
       },
+      {
+        source: '/api/proxy/ceneval/:path*',
+        destination: 'https://webceneval1.neotelecd.com/:path*',
+      },
     ]
   },
 }
