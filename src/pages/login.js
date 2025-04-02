@@ -50,6 +50,9 @@ const Login = () => {
     } else if (userDomain === 'broxel.com') {
       proxyEndpoint = '/api/proxy/broxel/neoapi/webservice.asmx/ExecuteTask03';
       idtask = '27';
+   } else if (userDomain === 'ceneval.com') {
+      proxyEndpoint = '/api/proxy/ceneval/neoapi/webservice.asmx/ExecuteTask03';
+      idtask = '2';
     } else {
       MySwal.fire({
         title: <strong>Atención</strong>,
