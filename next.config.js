@@ -18,8 +18,8 @@ module.exports = {
         destination: 'https://broxel.neotelecd.com/:path*',
       },
       {
-        source: '/api/proxy/ceneval/:path*',
-        destination: 'https://webceneval1.neotelecd.com/:path*',
+        source: '/api/proxy/ecd05/:path*',
+        destination: 'https://ecd05-i1.neotelecd.com/:path*',
       },
     ]
   },
