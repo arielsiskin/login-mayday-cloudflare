@@ -21,6 +21,10 @@ module.exports = {
         source: '/api/proxy/ecd05/:path*',
         destination: 'https://ecd05-i1.neotelecd.com/:path*',
       },
+      {
+        source: '/api/proxy/ecd06/:path*',
+        destination: 'https://ecd06.neotelecd.com/:path*',
+      },
     ]
   },
 }
